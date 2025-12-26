@@ -317,6 +317,171 @@ applications. Strong in backend architecture, authentication, data modeling, and
       </div>
     </div>
 
+	<!-- Skills Section -->
+<style>
+/* ================= SKILLS SECTION – CENTERED ================= */
+
+/* Parent row: center everything */
+#skills-section .row-slider {
+  display: flex !important;
+  justify-content: center !important;   /* ✅ center on page */
+  align-items: stretch;
+  gap: 32px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  flex-wrap: wrap;                      /* wrap if needed */
+}
+
+/* Override Bootstrap column behavior */
+#skills-section .slider-card {
+  flex: 0 0 auto !important;
+  width: 420px;                         /* ✅ LANDSCAPE */
+  max-width: 420px;
+}
+
+/* Skill card design */
+#skills-section .resume-wrap {
+  height: 100%;
+  padding: 32px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+#skills-section .resume-wrap:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+  border-color: #6c63ff;
+}
+
+/* Headings & text */
+#skills-section h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#skills-section p {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+/* ================= ICONS ================= */
+
+.skill-logos {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.skill-logos img {
+  width: 64px;                          /* ✅ BIG ICONS */
+  height: 64px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-logos img:hover {
+  transform: scale(1.3);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  #skills-section .slider-card {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+
+</style>
+
+ <!--Skills Section-->
+<div class="row row-slider skills-center">
+  <!-- all your skill cards here -->
+
+
+<div class="col-md-4 slider-card">
+  <div class="resume-wrap ftco-animate text-center p-4">
+    <h3 class="mb-3">Frontend</h3>
+    <p>HTML, CSS, JavaScript, React.js, TailwindCSS, Bootstrap</p>
+
+    <div class="skill-logos">
+      <img src="images/icons8-html-5-48.png" alt="HTML">
+      <img src="images/icons8-css-logo-48.png" alt="CSS">
+      <img src="images/icons8-javascript-48.png" alt="JavaScript">
+      <img src="images/icons8-react-40.png" alt="React">
+      <img src="images/icons8-tailwindcss-48.png" alt="Tailwind">
+      <img src="images/icons8-bootstrap-48.png" alt="Bootstrap">
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 slider-card">
+  <div class="resume-wrap ftco-animate text-center p-4">
+    <h3 class="mb-3">Backend</h3>
+    <p>Node.js, Express.js, JWT, REST APIs</p>
+
+    <div class="skill-logos">
+      <img src="images/icons8-node-js-48.png" alt="Node.js">
+      <img src="images/icons8-express-js-80.png" alt="Express">
+      <img src="images/icons8-rest-api-64.png" alt="REST API">
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4 slider-card">
+  <div class="resume-wrap ftco-animate text-center p-4">
+    <h3 class="mb-3">Databases</h3>
+    <p>MongoDB, MySQL, Schema Design, Indexing</p>
+
+    <div class="skill-logos">
+      <img src="images/icons8-mongodb-48.png" alt="MongoDB">
+      <img src="images/icons8-mysql-logo-48.png" alt="MySQL">
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 slider-card">
+  <div class="resume-wrap ftco-animate text-center p-4">
+    <h3 class="mb-3">Developer Tools</h3>
+    <p>Git, GitHub, Postman, VS Code, Vercel</p>
+
+<div class="skill-logos">
+      <img src="images/icons8-git-48.png" alt="Git">
+      <img src="images/icons8-github-50.png" alt="GitHub">
+      <img src="images/icons8-postman-api-64.png" alt="Postman">
+      <img src="images/icons8-vs-code-48.png" alt="VS Code">
+      <img src="images/icons8-cloud-development-50.png" alt="Vercel">
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4 slider-card">
+  <div class="resume-wrap ftco-animate text-center p-4">
+    <h3 class="mb-3">Programming Languages</h3>
+    <p>C++, JavaScript, SQL</p>
+
+    <div class="skill-logos">
+      <img src="images/icons8-c++-48.png" alt="C++">
+      <img src="images/icons8-javascript-48.png" alt="JavaScript">
+      <img src="images/icons8-sql-48.png" alt="SQL">
+    </div>
+  </div>
+</div>
+</div>
+
+ 
+
+
     <!-- Coding Profiles Heading -->
     <div class="row">
       <h1 class="big-4">Coding Profiles</h1>
