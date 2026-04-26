@@ -288,7 +288,7 @@ applications. Strong in backend architecture, authentication, data modeling, and
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
-									<span class="number" data-number="8">0</span> <span>+</span>
+									<span class="number" data-number="15">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
 								<p><a href="https://www.linkedin.com/in/jatin-kumar-1b0a9a258/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
@@ -322,27 +322,25 @@ applications. Strong in backend architecture, authentication, data modeling, and
 /* ================= SKILLS SECTION – CENTERED ================= */
 
 /* Parent row: center everything */
-#skills-section .row-slider {
-  display: flex !important;
-  justify-content: center !important;   /* ✅ center on page */
-  align-items: stretch;
-  gap: 32px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px 0;
-  flex-wrap: wrap;                      /* wrap if needed */
+/* Row layout fix */
+.skills-center {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Override Bootstrap column behavior */
-#skills-section .slider-card {
-  flex: 0 0 auto !important;
-  width: 420px;                         /* ✅ LANDSCAPE */
-  max-width: 420px;
+/* Make all columns equal height */
+.slider-card {
+  display: flex;
+  margin-bottom: 25px;
 }
 
 /* Skill card design */
 #skills-section .resume-wrap {
-  height: 100%;
+  flex: 1;                     /* ✅ makes all cards equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 32px;
   border-radius: 18px;
   background: #ffffff;
@@ -367,6 +365,7 @@ applications. Strong in backend architecture, authentication, data modeling, and
 #skills-section p {
   font-size: 15px;
   margin-bottom: 18px;
+  min-height: 45px;   /* ✅ equal text space */
 }
 
 /* ================= ICONS ================= */
@@ -376,11 +375,11 @@ applications. Strong in backend architecture, authentication, data modeling, and
   justify-content: center;
   gap: 26px;
   flex-wrap: wrap;
-  margin-top: 18px;
+  margin-top: auto;   /* ✅ push icons to bottom */
 }
 
 .skill-logos img {
-  width: 64px;                          /* ✅ BIG ICONS */
+  width: 64px;
   height: 64px;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -393,12 +392,10 @@ applications. Strong in backend architecture, authentication, data modeling, and
 /* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
-  #skills-section .slider-card {
-    width: 90%;
-    max-width: 90%;
+  .slider-card {
+    width: 100%;
   }
 }
-
 
 </style>
 
